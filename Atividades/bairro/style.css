@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+}
+
+body {
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	text-align: center;
+	background-position: center;
+    background-size: cover;
+}
+
+h1, h2 {
+	text-align: center;
+	background-color: gray;
+	color: white;
+	font-family: 'Josefin+Sans', sans-serif;
+}
+
+p {
+	font-family: 'Bitter', serif;
+}

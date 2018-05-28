@@ -1,0 +1,17 @@
+body {
+	background-image: url(background.jpg);
+	font-family: 'PT Serif', serif;
+}
+
+h1, h3 {
+	text-align: center;
+}
+
+#cabeçalho, #objetivo {
+	text-align: center;
+}
+
+#titulo1, #titulo2, #titulo3, #titulo4 {
+	background-color: gray;
+	border: 2px solid black;
+}

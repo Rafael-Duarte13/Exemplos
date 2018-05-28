@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulário - Lider de sala</title>
+		<style type="text/css">
+			body {
+				background-color: lightgray;
+			}
+			.obrig {
+				color: red;
+			}
+			#centro {
+				margin-left: 275px;
+				margin-right: 275px;
+				background-color: white;
+			}
+			.title {
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="centro">
+			<form method="get" action="arquivo.php">
+				<fieldset>
+					<legend class="title">Eleições - Lider de sala</legend>
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" name="nome" placeholder="Digite aqui!" autocomplete="off" required autofocus/><span class="obrig">*</span>
+					<br/>
+					<label for="sobre">Sobrenome:</label>
+					<input type="text" id="sobre" name="sobre" placeholder="Digite aqui!" autocomplete="off" required/><span class="obrig">*</span>
+					<br/>
+					<label for="data">Data de nascimento:</label>
+					<input type="date" id="data" name="data"/ required/><span class="obrig">*</span>
+					<br/>
+					<label for="genero">Genero:</label>
+						<select id="genero" name="genero">
+							<option disabled selected>Seu genero</option>
+							<option value="masculino">Masculino</option>
+							<option value="feminino">Feminino</option>
+							<option value="outro">Outro</option>
+						</select>
+					<fieldset>
+						<legend class="title">Líder</legend>
+						<label>
+							<input type="radio" name="nome" value="Rafael Neto"/>
+							Rafael Neto
+							<input type="radio" name="nome" value="Fabiano"/>
+							Fabiano
+							<input type="radio" name="nome" value="Lauro"/>
+							Lauro
+							<input type="radio" name="nome" value="Hudson"/>
+							Hudson
+							<input type="radio" name="nome" value="Gizelle"/>
+							Gizelle
+							<input type="radio" name="nome" value="Carol"/>
+							Carol
+							<input type="radio" name="nome" value="Rafael Bezerra"/>
+							Rafael Bezerra
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend class="title">Vice-Líder</legend>
+						<label>
+							<input type="radio" name="nome" value="Rafael Neto"/>
+							Rafael Neto
+							<input type="radio" name="nome" value="Fabiano"/>
+							Fabiano
+							<input type="radio" name="nome" value="Lauro"/>
+							Lauro
+							<input type="radio" name="nome" value="Hudson"/>
+							Hudson
+							<input type="radio" name="nome" value="Gizelle"/>
+							Gizelle
+							<input type="radio" name="nome" value="Carol"/>
+							Carol
+							<input type="radio" name="nome" value="Rafael Bezerra"/>
+							Rafael Bezerra
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend class="title">Secretário</legend>
+						<label>
+							<input type="radio" name="nome" value="Rafael Neto"/>
+							Rafael Neto
+							<input type="radio" name="nome" value="Fabiano"/>
+							Fabiano
+							<input type="radio" name="nome" value="Lauro"/>
+							Lauro
+							<input type="radio" name="nome" value="Hudson"/>
+							Hudson
+							<input type="radio" name="nome" value="Gizelle"/>
+							Gizelle
+							<input type="radio" name="nome" value="Carol"/>
+							Carol
+							<input type="radio" name="nome" value="Rafael Bezerra"/>
+							Rafael Bezerra
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend class="title">Humorista</legend>
+						<label>
+							<input type="radio" name="nome" value="Rafael Neto"/>
+							Rafael Neto
+							<input type="radio" name="nome" value="Fabiano"/>
+							Fabiano
+							<input type="radio" name="nome" value="Lauro"/>
+							Lauro
+							<input type="radio" name="nome" value="Hudson"/>
+							Hudson
+							<input type="radio" name="nome" value="Gizelle"/>
+							Gizelle
+							<input type="radio" name="nome" value="Carol"/>
+							Carol
+							<input type="radio" name="nome" value="Rafael Bezerra"/>
+							Rafael Bezerra
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend class="title">Estiloso</legend>
+						<label>
+							<input type="radio" name="nome" value="Rafael Neto"/>
+							Rafael Neto
+							<input type="radio" name="nome" value="Fabiano"/>
+							Fabiano
+							<input type="radio" name="nome" value="Lauro"/>
+							Lauro
+							<input type="radio" name="nome" value="Hudson"/>
+							Hudson
+							<input type="radio" name="nome" value="Gizelle"/>
+							Gizelle
+							<input type="radio" name="nome" value="Carol"/>
+							Carol
+							<input type="radio" name="nome" value="Rafael Bezerra"/>
+							Rafael Bezerra
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend class="title">Tímido</legend>
+						<label>
+							<input type="radio" name="nome" value="Rafael Neto"/>
+							Rafael Neto
+							<input type="radio" name="nome" value="Fabiano"/>
+							Fabiano
+							<input type="radio" name="nome" value="Lauro"/>
+							Lauro
+							<input type="radio" name="nome" value="Hudson"/>
+							Hudson
+							<input type="radio" name="nome" value="Gizelle"/>
+							Gizelle
+							<input type="radio" name="nome" value="Carol"/>
+							Carol
+							<input type="radio" name="nome" value="Rafael Bezerra"/>
+							Rafael Bezerra
+						</label>
+					</fieldset>
+				</fieldset>
+					<button type="submit">Votar</button>
+					<button type="reset">Limpar</button>
+			</form>
+		</div>
+	</body>
+</html>
