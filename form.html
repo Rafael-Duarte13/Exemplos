@@ -4,6 +4,24 @@
 		<meta charset="utf-8"/>
 		<title>Formulário</title>
 		<link rel="stylesheet" href="resources/css/bootstrap.css">
+		<style type="text/css">
+			body {
+				background-color: gray;
+			}
+
+			.mudar {
+				float: left;
+				margin-left: 20px;
+				padding: 10px;
+				border: 3px solid white;
+			}
+
+			.mudar2 {
+				text-align: center;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container">
@@ -14,11 +32,11 @@
 					<div class="row">
 						<div class="col">
 							<label>Nome</label>
-							<input type="text" class="form-control" placeholder="Digite o seu nome aqui!" autofocus/>
+							<input type="text" class="form-control is-invalid" placeholder="Digite o seu nome aqui!" autofocus required/>
 						</div>
 						<div class="col">
 							<label>Sobrenome</label>
-							<input type="text" class="form-control" placeholder="Digite o seu sobrenome aqui!"/>
+							<input type="text" class="form-control is-invalid" placeholder="Digite o seu sobrenome aqui!" required/>
 						</div>
 					</div>
 					<div class="form-group" style="margin-top: 10px;">
@@ -29,26 +47,36 @@
 							<div class="input-group-prepend">
 							<div class="input-group-text">@</div>
 						</div>
-						<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="fulano@gmail.com">
+						<input type="text" class="form-control is-invalid" id="inlineFormInputGroup" placeholder="fulano@gmail.com" required>
 					</div>
 
 						<label for="senha">Senha</label>
-						<input type="password" class="form-control" id="senha" name="senha"/>
+						<input type="password" class="form-control is-invalid" id="senha" name="senha" required/>
 					</div>
 					<div class="row" style="margin-top: 10px;">
 						<div class="col">
 							<label for="cpf">CPF</label>
-							<input type="text" class="form-control" id="cpf" name="CPF"/>
+							<input type="text" class="form-control is-invalid" id="cpf" name="CPF" required/>
 						</div>
 						<div class="col">
 							<label for="dt_nasc">Data de nascimento</label>
-							<input type="date" class="form-control" id="dt_nasc" name="dt_nasc"/>
+							<input type="date" class="form-control is-invalid" id="dt_nasc" name="dt_nasc" required/>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 10px;">
+						<div class="col">
+							<label for="cell">Celular</label>
+							<input type="text" class="form-control is-invalid" id="cell" name="celular" required/>
+						</div>
+						<div class="col">
+							<label for="cep">CEP</label>
+							<input type="text" class="form-control is-invalid" id="cep" name="cep" required/>
 						</div>
 					</div>
 					<div class="form-group" style="margin-top: 10px;">
 						<label for="cidade">Cidade:</label>
-						<select class="form-control" id="cidade" name="cidade">
-							<option disabled selected>Sua cidade</option>
+						<select class="form-control is-invalid" id="cidade" name="cidade" required>
+							<option disabled selected></option>
 							<option value="nat">Natal</option>
 							<option value="mos">Mossoró</option>
 							<option value="cai">Caicó</option>
@@ -56,47 +84,64 @@
 						</select>
 					</div>
 
-					<fieldset>
-						<legend>Genero</legend>
-						<div class="custom-control custom-radio" style="display: inline-block; margin-right: 3px;">
-							<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-							<label class="custom-control-label" for="customRadio1">Masculino</label>
-						</div>
-						<div class="custom-control custom-radio" style="display: inline-block;">
-							<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-							<label class="custom-control-label" for="customRadio2">Feminino</label>
-						</div>
-					</fieldset>
+					<div>
+						<fieldset class="mudar">
+							<legend class="mudar2">Genero</legend>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="customRadio1">Masculino</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+								<label class="custom-control-label" for="customRadio2">Feminino</label>
+							</div>
+						</fieldset>
 
-					<fieldset>
-						<legend>Preferências</legend>
+						<fieldset class="mudar">
+							<legend class="mudar2">Preferências</legend>
 
-						<div class="custom-control custom-checkbox" style="display: inline-block; margin-right: 3px;">
-							<input type="checkbox" class="custom-control-input" id="customCheck1">
-							<label class="custom-control-label" for="customCheck1">Esportes</label>
-						</div>
-						<div class="custom-control custom-checkbox" style="display: inline-block; margin-right: 3px;">
-							<input type="checkbox" class="custom-control-input" id="customCheck2">
-							<label class="custom-control-label" for="customCheck2">Cinema</label>
-						</div>
-						<div class="custom-control custom-checkbox" style="display: inline-block; margin-right: 3px;">
-							<input type="checkbox" class="custom-control-input" id="customCheck3">
-							<label class="custom-control-label" for="customCheck3">Viagens</label>
-						</div>
-						<div class="custom-control custom-checkbox" style="display: inline-block; margin-right: 3px;">
-							<input type="checkbox" class="custom-control-input" id="customCheck4">
-							<label class="custom-control-label" for="customCheck4">Aventura</label>
-						</div>
-					</fieldset>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customCheck1">
+								<label class="custom-control-label" for="customCheck1">Esportes</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customCheck2">
+								<label class="custom-control-label" for="customCheck2">Cinema</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customCheck3">
+								<label class="custom-control-label" for="customCheck3">Viagens</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="customCheck4">
+								<label class="custom-control-label" for="customCheck4">Aventura</label>
+							</div>
+						</fieldset>
 
-					<div style="float: left;">
-						<legend>Observações</legend>
-						<textarea placeholder="Sua observação aqui..." maxlength="100" cols="50	" rows="5"></textarea>
+						<fieldset class="mudar">
+							<legend class="mudar2">Avaliação</legend>
+							<label>Gostou desse formulário?</label>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="customRadio3" name="customRadio2" class="custom-control-input" checked>
+								<label class="custom-control-label" for="customRadio3">Sim</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" id="customRadio4" name="customRadio2" class="custom-control-input">
+								<label class="custom-control-label" for="customRadio4">Não</label>
+							</div>
+						</fieldset>
+
+						<div class="form-group" style="float: right;">
+							<legend style="margin-left: 20px;">Observações</legend>
+							<textarea class="form-control" style="margin-left: 20px;" placeholder="Digite sua observação aqui!" maxlength="100" cols="50	" rows="5"></textarea>
+						</div>
 					</div>
 
 				</fieldset>
-					<button type="submit">Cadastrar</button>
-					<button type="reset">Limpar</button>
+					<div style="text-align: right;">
+						<button type="submit" class="btn btn-success">Enviar formulário</button>
+						<button type="reset" class="btn btn-danger">Limpar</button>
+					</div>	
 			</form>
 		</div>
 	</body>
